@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>port3</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- 모달창 -->
+    <div class="modal">
+        <div class="modal__text">
+            <span class="modal__text_colse">X</span>
+            <h1>❕</h1>
+            <span>시스템 점검중입니다.</span>
+            <p>보다 안정적인 서비스 이용을 위해 현재 점검 중입니다.</p>
+            <p>서비스 이용에 불편을 드려 죄송합니다.</p>
+            <p>[점검 시간] 취업할 때까지</p>
+        </div>
+    </div>
+
+    <!-- 왼쪽 바 -->
+    <nav class="nav">
+      <ul>
+        <li><i class="bx bx-home"></i><a href="#">Home</a></li>
+        <li><i class="bx bx-headphone"></i><a href="#">Services</a></li>
+        <li><i class="bx bx-flag"></i><a href="#">Alerts</a></li>
+        <li><i class="bx bx-pie-chart-alt-2"></i><a href="#">Stats</a></li>
+      </ul>
+    </nav>
+
+    <!-- 사이드바 제외 전부 마진주기 -->
+    <div class="container">
+      <!-- header 바 -->
+      <header class="header">
+        <div class="header__search">
+          <input type="search" placeholder="찾기" /><button type="button">
+            <i class="bx bx-search"></i>
+          </button>
+        </div>
+
+        <div class="header__right">
+          <a href="#"><i class="bx bxs-bell"></i><span>3</span></a>
+          <a href="#"><i class="bx bxs-envelope"></i><span>8</span></a>
+          <span>Minny Bang</span>
+        </div>
+      </header>
+
+      <!-- main 바 -->
+      <main class="main">
+        <h1>Dashboard</h1>
+        <div class="main__items">
+            <div class="main__items_item">
+                <div class="main__item_left">
+                    <h2>수익(Monthly)</h2>
+                    <span>$300,000</span>
+                </div>
+                <i class='bx bxs-calendar' ></i>
+            </div>
+            <div class="main__items_item">
+                <div class="main__item_left">
+                    <h2>수익(Annual)</h2>
+                    <span>$800,000</span>
+                </div>
+                <i class='bx bxs-badge-dollar'></i>
+            </div>
+            <div class="main__items_item">
+                <div class="main__item_left">
+                    <h2>작업</h2>
+                    <span>13건</span>
+                </div>
+                <i class='bx bx-list-check' ></i>
+            </div>
+            <div class="main__items_item">
+                <div class="main__item_left">
+                    <h2>질문</h2>
+                    <span>26건</span>
+                </div>
+                <i class='bx bx-message-rounded-check'></i>
+            </div>
+        </div>
+      </main>
+
+      <!-- section 바 -->
+      <section class="section">
+        <div class="section__left">
+            <h3>Earnings Overview</h3>
+            <div class="section__left_img"></div>
+        </div>
+        <div class="section__right">
+            <ul class="section__right_items">
+                <li><h3>Tasks</h3></li>
+                <li><a href="#">Borrowed Items</a><p>9</p></li>
+                <li><a href="#">Trello requests</a><p>2</p></li>
+                <li><a href="#">Marked Comments</a><p>6</p></li>
+            </ul>
+        </div>
+        <div class="section__right">
+            <ul class="section__right_items news">
+                <li><h3>주요뉴스</h3></li>
+                <li><a href="#">세금 혜택도없는 기업 자율 공시, '밸류업'이 될까요?</a> </li>
+                <li><a href="#">문화 콘텐츠로 되살아난 '창업주' 정신…뮤지컬·고택으로 시민 가까이</a> </li>
+                <li><a href="#">불티나게 팔리는천원빵…고물가에 '갓성비'만 찾는다</a> </li>
+                <li><a href="#">프랑스 파리여행 30대 한국인 2주째 연락두절</a> </li>
+                <li><a href="#">막오른 주총시즌… 주주제안무산되나</a> </li>
+                <li><a href="#">테슬라,인도 배터리 회사 ‘테슬라 파워’ 제소…“상표권 침해”</a> </li>
+                <li><a href="#">이더리움 ETF 물건너가나…증권성 논쟁 격화</a> </li>
+            </ul>
+        </div>
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

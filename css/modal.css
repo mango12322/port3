@@ -1,0 +1,43 @@
+/* 모달창 */
+.modal {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    z-index: 1;
+}
+
+.modal__toggle {
+    display: flex;
+}
+
+.modal__text {
+    position: relative;
+    font-size: 2em;
+    border-radius: 5px;
+    background-color: var(--main_color);
+    width: 1000px;
+    height: 300px;
+}
+
+.modal__text h1 {
+    margin-bottom: 20px;
+}
+
+.modal__text p:nth-last-child(1) {
+    margin-top: 20px;
+}
+
+.modal__text_colse {
+    position: absolute;
+    transition: 1s ease-in-out;
+    right: 15px;
+    top: 5px;
+}
+
+.modal__text_colse:hover {
+    opacity: .6;
+}

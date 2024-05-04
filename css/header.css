@@ -1,0 +1,118 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: white;    
+    box-shadow: 1px 2px 4px grey;    
+    width: 100vw;
+}
+
+.header__search {
+    display: flex;
+    margin-left: 20px;
+}
+
+.header__search input{
+    font-size: var(--main_font);
+    padding: 4px;    
+    border-radius: 5px;
+    width: 130px;    
+    transition: 1s ease-in-out;
+}
+
+/* 인풋에 글 작성시 동작 */
+.header__search input:focus {    
+    width: 300px;
+}
+
+.header__search button {
+    background-color: #333538;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header__search button i {
+    font-size: var(--main_font);  
+    padding: 5px;
+    color: white;
+}
+
+/* header 오른쪽부분 */
+
+.header__right {
+    display: flex;
+    align-items: center;
+    margin-right: 4em;
+    color: #333538;
+    font-size: var(--main_font);
+}
+
+.header__right a {
+    display: flex;
+    text-decoration: none;
+    color: var(--main_font);
+    margin-right: 30px;
+    position: relative;
+}
+
+.header__right a:hover {
+    opacity: .6;
+}
+
+.header__right a > span {
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 17px;
+    height: 17px;
+    text-align: center;    
+    border-radius: 50%;
+    font-size: 15px;
+    top: -7px;
+    right: -7px;
+    animation: spin 1.5s ease-in-out infinite;
+}
+
+/* 알림 animation 주기 */
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    30% {
+        transform: rotateY(90deg);
+    }
+
+    70% {
+        transform: rotateY(180deg);
+    }
+
+    80% {
+        transform: rotateY(90deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header__right {
+        flex-direction: column;
+        position: fixed;
+        bottom: 20px;
+        left: 15px;
+        z-index: 1000;
+        color: white;        
+    }
+    .header__right a:nth-child(1) {
+        margin-bottom: 15px;
+    }
+    .header__right span {
+        display: none;
+    }
+}
+
+
+

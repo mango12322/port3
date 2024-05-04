@@ -1,0 +1,35 @@
+@import url(./header.css);
+@import url(./nav.css);
+@import url(./main.css);
+@import url(./section.css);
+@import url(./modal.css);
+
+:root {
+    --text_color: #eeeeee;
+    --main_color: #575bd3;
+    --main_font: 21px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    user-select: none;
+    list-style: none;
+    text-decoration: none;    
+}
+a {
+    color: black;
+}
+
+body {
+    background-color: #eeeeee;    
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    margin-left: 50px;
+}
+
