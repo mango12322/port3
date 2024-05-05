@@ -6,6 +6,8 @@ var nav = document.querySelector(`.nav ul`);
 var section__right_items = document.querySelector(`.section__right_items`);
 var news = document.querySelector(`.news`);
 
+var header__right = document.querySelector(`.header__right`);
+
 section__right_items.addEventListener(`click`, function() {
     modal.classList.toggle(`modal__toggle`);
 })
@@ -19,6 +21,10 @@ main__items_item.addEventListener(`click`, function() {
 })
 
 nav.addEventListener(`click`, function() {
+    modal.classList.toggle(`modal__toggle`);
+})
+
+header__right.addEventListener(`click`, function() {
     modal.classList.toggle(`modal__toggle`);
 })
 
