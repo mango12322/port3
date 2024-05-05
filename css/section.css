@@ -1,6 +1,7 @@
 .section {
     display: flex;
     margin: 70px 30px;
+    width: 100vw;
 }
 
 /* section 왼쪽 */
@@ -25,13 +26,17 @@
 }
 
 /* section 오른쪽 */
+.section__right {
+    width: 100%;
+}
+
 .section__right_items {
     box-shadow: 1px 1px 3px grey;
-    min-width: 400px;
+    width: 400px;
     font-size: 1.2em;
     position: relative;
     margin-left: 15px;    
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 
 .section__right_items li {
@@ -81,14 +86,17 @@
 
     .section__right {
         margin-bottom: 30px;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 992px) {
-
-}
-
 @media screen and (max-width: 576px) {
+    .section__right_items {
+        width: 100%;
+    }
 
+    .section__right {
+        margin-right: 10px;        
+    }
 }
 
